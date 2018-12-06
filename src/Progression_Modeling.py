@@ -49,7 +49,7 @@ def CQT_transform(data, sr):
     CQT = CQT = abs(pseudo_cqt(data, sr, fmin=A1, n_bins=120, bins_per_octave=24, sparsity=.95, window=('kaiser', 10)))
     N_CQT = normalize(CQT, norm='l1', axis=0)
     return N_CQT
-    
+
 
 def Get_Mel():
     data, sr = Load()
@@ -75,14 +75,14 @@ def Get_Boundaries(Progression):
         if next_state != state or j==N-1:
             if j-i >= 10:
                 Boundaries.append([i, j])
-                
+
             i = j
             state = Progression[i]
-            
+
     return Boundaries
-            
-            
-        
+
+
+
 
 def Deaden(M, tau):
     R, C = np.shape(M)
