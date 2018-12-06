@@ -28,6 +28,7 @@ def Load():
 def Prepare(data):
     T = data.T
     if np.shape(T)[0] == 2:
+        print("fixed")
         data = T[0]
     data = trim(data, 40)[0]
     return data
