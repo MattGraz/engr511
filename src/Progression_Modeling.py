@@ -72,7 +72,7 @@ def Clean(M, tau):
 def V_Chroma(CQT_Vector):
     Chroma = np.zeros(12)
     [A, B_b, B, C, C_s, D, E_b, E, F, F_s, G, A_b] \
-    = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+    = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
    
     for i in range(5):
